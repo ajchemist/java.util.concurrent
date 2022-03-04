@@ -1,0 +1,15 @@
+.cpcache
+.clj-kondo/.cache
+.lsp/.cache
+.nrepl*
+.ci/deploy-key
+.ci/deploy-key.pub
+
+
+cljs-test-runner-out
+
+
+*.build_artifacts.txt
+
+
+/target
