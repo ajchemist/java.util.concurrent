@@ -1,7 +1,4 @@
-(ns user.java.util.concurrent
-  (:require
-   [user.java.lang.runtime :refer [available-processors]]
-   )
+(ns ajchemist.java.util.concurrent
   (:import
    java.lang.Runnable
    java.util.Collection
@@ -13,6 +10,11 @@
    java.util.concurrent.ScheduledFuture
    java.util.concurrent.ScheduledThreadPoolExecutor
    ))
+
+
+(defn available-processors
+  []
+  (. (Runtime/getRuntime) availableProcessors))
 
 
 (defn fixed-thread-pool
@@ -61,13 +63,14 @@
 ;; * scheduled executors
 
 
-(defn ^ScheduledExecutorService single-thread-scheduler
+(defn single-thread-scheduler
+  ^ScheduledExecutorService
   []
   (Executors/newSingleThreadScheduledExecutor))
 
 
-(defn ^ScheduledThreadPoolExecutor
-  pooled-scheduler
+(defn pooled-scheduler
+  ^ScheduledThreadPoolExecutor
   [pool-size]
   #_(Executors/newScheduledThreadPool pool-size)
   (ScheduledThreadPoolExecutor. pool-size))
