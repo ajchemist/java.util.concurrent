@@ -3,24 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <packaging>jar</packaging>
   <groupId>io.github.ajchemist</groupId>
-  <artifactId>user.java.util.concurrent</artifactId>
-  <version>2022.63.52354</version>
-  <name>user.java.util.concurrent</name>
+  <artifactId>java.util.concurrent</artifactId>
+  <version>2023.37.32116</version>
+  <name>java.util.concurrent</name>
   <dependencies>
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
-      <version>1.10.3</version>
-    </dependency>
-    <dependency>
-      <groupId>user.java.lang</groupId>
-      <artifactId>user.java.lang</artifactId>
-      <version>2020.164.33984</version>
-    </dependency>
-    <dependency>
-      <groupId>user.timbre</groupId>
-      <artifactId>user.timbre</artifactId>
-      <version>2020.289.40335</version>
+      <version>1.11.1</version>
     </dependency>
   </dependencies>
   <build>
@@ -33,6 +23,6 @@
     </repository>
   </repositories>
   <scm>
-    <url>https://github.com/ajchemist/user.java.util.concurrent</url>
+    <url>https://github.com/ajchemist/java.util.concurrent</url>
   </scm>
 </project>
